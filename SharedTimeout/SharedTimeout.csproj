@@ -2,6 +2,32 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>SharedTimeout</Title>
+    <Version>$(VersionPrefix)</Version>
+    <Authors>phoc9azqjt63pkrni29p</Authors>
+    <PackageProjectUrl>https://github.com/phoc9azqjt63pkrni29p/SharedTimeout</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/phoc9azqjt63pkrni29p/SharedTimeout</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Copyright>MIT</Copyright>
+    <Description>Convinient way to enforce same timeout for multiple conseqentive operations</Description>
+    <PackageTags>timeout;shared timeout;timer</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
