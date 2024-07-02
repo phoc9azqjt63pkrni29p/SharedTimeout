@@ -67,7 +67,12 @@ namespace SharedTimeout
         public int ValueHours => (int)Value.TotalHours;
         /// <summary> Explicit remaining time in days </summary>
         public int ValueDays => (int)Value.TotalDays;
-
+        /// <summary> Check if current instance <see cref="SharedTimeout"/> already elapsed </summary>
+        public bool IsElapsed => Value < TimeSpan.Zero;
+        /// <summary>
+        /// Initializes a new instance of the SharedTimeout with specified time span.
+        /// </summary>
+        /// <param name="value">The time interval to elapse</param>
         private SharedTimeout(TimeSpan value)
         {
             CreatedAt = DateTime.Now;
